@@ -1,0 +1,255 @@
+:root{
+    --bg-color: #0d2534;
+    --bg-color-opacity: rgba(13,37,52,.8);
+    --main-color: white;
+    --main-color-dark: #0d2534;
+    --link-hover-color: #07cff6;
+    --shadow1: #07cff6;
+    --shadow2: black;
+    --shadow3: blue;
+    --shadow4: darkblue;
+}
+
+
+*{
+    font-family: 'Roboto', Arial, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    color: #0d2534;
+}
+.offset:before{
+    height: 3.7rem;
+    margin-top: -3.7rem;
+    content: "";
+    display: block;
+}
+
+
+/*---- Navbar ----*/
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: var(--bg-color-opacity)!important;
+}
+.navbar-brand img{
+    height: 2rem;
+}
+.navbar-brand{
+    transition: box-shadow 1s;
+    border-radius: 50%;
+    padding: .2em;   
+}
+.navbar-brand:hover{    
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.navbar-nav li{
+    padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    padding-top: .8rem;
+    text-shadow: 0 0 .2rem white;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #07cff6;
+    text-shadow: 0 0 .2rem #07cff6, 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    
+}
+
+/*--- Slider ---*/
+
+.carousel-item{
+    height: 100vh;
+    background-size: cover;
+}
+.carousel-caption{
+    position: absolute;
+    top:0;
+    left: 0;
+    /*top: 38%;   */ 
+    text-transform: uppercase;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(13,37,52,.2);
+}
+.carousel-caption .btn{
+    width: 10rem;
+    align-self: center;
+}
+.carousel-caption h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: 0 0 .5rem white;
+    padding-bottom: 1.2rem;
+}
+.carousel-caption h3{
+    font-size: 2rem;
+    text-shadow: 0 0 .5rem white;
+     padding-bottom: 1.2rem;
+}
+.bt-lg{
+    border-width: medium;
+    border-radius: 0;
+    font-size: 1.1rem;
+}
+
+
+/*--- Course Section ---*/
+.narrow{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.btn-md{
+    border-width: medium;
+    background: #0d2534;
+    border-color: #0d2534;
+    box-shadow: 0 0 .5rem #0d2534;;
+    padding: .6rem 1.1rem;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+.btn-md:hover{
+    background: #194162;
+    border-color: #194162;
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+/*--- Portfolio Section ---*/
+.jumbotron{
+    border-radius: 0;
+    padding: 3rem 0 2rem;
+    margin-bottom: 0;
+}
+h3.heading{
+    font-size: 1.9 rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: .5rem;
+}
+.heading-underline{
+    width: 5rem;
+    height: .15rem;
+    background: #505962;
+    margin: 0 auto 2rem;
+}
+.portfolio img{
+    max-width: 100%;  
+    transition: transform .5s ease;
+}
+.row.no-padding [class*=col-]{
+    padding: 0;
+}
+.portfolio img:hover{
+    transform: scale(1.1);
+    cursor: zoom-in;
+}
+.portfolio{
+    overflow: hidden;
+}
+
+
+
+/* ---- Team Section -----*/
+.card{
+    margin: 2rem;
+}
+
+
+
+/*----- Contant Section ----*/
+footer{
+    background: var(--bg-color);
+    color: white;
+    padding: 2rem 0 3rem;
+    margin-top: 1rem;
+}
+footer img{
+    height: 7rem;
+    margin: 1.5rem 0;
+}
+footer a{
+    color: white;
+    font-weight: 700;
+    letter-spacing: .07rem;
+    text-shadow: 0 0 .2rem white;
+}
+footer svg.svg-inline--fa{
+    font-size: 1.6rem;
+    margin: .2rem;
+}
+footer a:hover{
+    color: #07cff6;
+    text-decoration: none;
+    text-shadow: 0 0 .2rem #07cff6,1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+ }
+hr.socket{
+    border-top: .2rem solid darkgrey;
+    width: 100%;
+}
+
+
+/*--- Media Queries ----*/
+@media(max-width:767px){
+    
+    .carousel-caption h1{
+        font-size: 2.8rem;
+        letter-spacing: .15rem;
+        padding-bottom: .5rem;
+    
+    }
+    .carousel-caption h3{
+        font-size: 1.5rem;
+        padding-bottom: .6rem;
+    }
+    bt-lg{
+        font-size: 1rem;
+    }
+    .narrow h1{
+        font-size: 1.5rem;
+    }
+    p.lead{
+        font-size: 1rem;
+    }
+    
+}
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+/*============ COLOR THEME:
+neon blue, from light to dark
+    #07cff6 	(7,207,246)
+	#194162 	(25,65,98)
+	#0d2534 	(13,37,52)
+	#04131e 	(4,19,30)
+	#020204 	(2,2,4)
+=============*/

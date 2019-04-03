@@ -1,0 +1,73 @@
+:root{
+--main-color: #112266;
+--main-bg-color: #eee;
+--accent-color: darkorange;
+}    
+
+body{
+background: var(--main-bg-color);
+color: var(--main-color);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+box-sizing: border-box;
+margin: 0;    
+}
+a{
+color: var(--main-color);
+text-decoration: none;
+}
+a:hover{color: var(--main-color);}
+#container{
+width: 90%;
+margin: 0 auto;
+}
+
+.grid{
+max-width: 500px;
+margin: 10px auto;
+}
+.grid article{
+margin: 1rem;
+}
+
+@supports (display:grid){
+.grid{
+max-width: 100%;
+margin: 1rem 0;        
+}
+.grid article{
+margin: 0;
+}
+.grid{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-gap: 1rem;
+}
+}
+
+.gallery-wrapper > article{
+display: flex;
+flex-direction: column;
+border: .5px solid var(--main-color);
+padding: 1rem;
+}
+.gallery-wrapper > article img{
+max-width: 280px;
+order: -1;
+align-self: center;
+}
+.gallery-wrapper > article ul, .gallery-wrapper > article p{
+margin-bottom: 2em; 
+}
+.btn{
+align-self: center;
+border: .4px solid var(--main-color);
+color: var(--main-color);
+text-decoration: none;
+padding: .4rem;
+transition: .5s;
+margin-top: auto;    
+}
+.btn:hover{
+background: var(--accent-color);
+transform: scale(1.1);
+}

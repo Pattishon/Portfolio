@@ -1,0 +1,68 @@
+body {
+	overflow-x: hidden; /*--right gutter fix--*/
+	font-family: sans-serif;
+	color: #464748;
+}
+.navbar-brand img{
+    height: 2rem;
+}
+
+.navbar{
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    background: rgba(0,0,0,0.95)!important;
+    /*opacity: .95*/
+}
+.padding{
+    padding-top: 3.6rem;
+}
+.carousel img{
+    min-width: 100%;
+    max-width: 100%;
+}
+img {
+    max-width: 100%;
+}
+#testimonials .jumbotron{
+    margin-bottom: 0;
+}
+.jumbotron{
+    background-color: #ebebeb;
+    border-radius: 0;
+}
+footer .row, footer .bottom{
+    background-color: #3a3a3a;
+    color: white;    
+}
+footer .bottom{
+    padding: 20px;
+}
+footer .bottom a{
+    color: white; 
+    border-bottom: 1px dotted;
+    text-transform: uppercase;
+    
+}
+footer img{
+    height: 2rem;
+    margin: 0 auto 20px;
+}
+p.small{
+    font-size: .8rem;
+}
+
+
+
+
+
+
+
+
+/*--- Media Queries --*/
+@media (max-width: 768px) {
+	.btn {
+		font-size: 1.1rem;
+	}
+    footer .bottom{text-align:center!important}
+}
+
