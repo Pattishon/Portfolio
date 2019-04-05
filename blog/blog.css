@@ -9,17 +9,15 @@ dark green modern designer theme
 
 :root{
     --color1: #b1d2db;
-    
+    --dark: #202020;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #202020;
-    font-family: 'Roboto', sans-serif;
-    
-    
+    color: var(--dark);
+    font-family: 'Roboto', sans-serif;    
 }
 html{
   overflow-x: hidden;
@@ -102,7 +100,7 @@ ul.navbar-nav li a{
 }
 .main-section{   
   display: grid;
-  grid-template: auto auto / 75% 1fr;  
+  grid-template: auto auto / 3fr 1fr;  
   margin: 0 auto;    
 }
 .header{  
@@ -125,6 +123,7 @@ span{
 }
 section li{
     margin-left: .3rem;
+    list-style: square inside;
 }
     /* --- Aside Section ---*/
     aside img{
@@ -143,7 +142,7 @@ section li{
         justify-content: center;    
     }
     .social-icons a{
-        color: #202020;
+        color: var(--dark);
         margin: 0 .8rem;
     }
     .social-icon:hover *{
@@ -198,7 +197,7 @@ article pre {
     color: #666;
     page-break-inside: avoid;
     font-family: monospace;
-    font-size: 15px;
+    font-size: .9em;
     line-height: 1.6;
     margin-bottom: 1.6em;
     max-width: 100%;
@@ -223,6 +222,7 @@ article pre {
   margin: 2rem .3rem .3rem;
   display: flex;
   justify-content: space-between;
+    align-items: center;
 }
 .postsNav a{
   padding: .5rem;
@@ -292,6 +292,9 @@ article pre {
     }
     .main-section aside img{
         max-height: 30vh;
+    }
+    article pre{
+        font-size: .8em;
     }
 }
    

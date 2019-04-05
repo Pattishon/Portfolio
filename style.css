@@ -98,8 +98,8 @@ body{
 .offset::before{
     display: block;
     content: "";
-    height: 3.6rem;
-    margin-top: -3.6rem;
+    height: 3.78rem;
+    margin-top: -3.78rem;
 }
 
 /*--- About me ---*/

@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Partycja.A programming blog</title>
     
-    <link rel="stylesheet" href="../../blog.css">    
+    <link rel="stylesheet" href="../../blog.css"> 
+    <link rel='stylesheet' href="boxshadow-page-effect.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:200,400,700" rel="stylesheet">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <link rel="shortcut icon" type="image/png" href="../../../img/favicon-16x16.png"/>
+    <link rel="shortcut icon" type="image/png" href="../../../img/favicon-16x16.png"/>  
 </head>
 <body>   
     <div class="container">
@@ -28,8 +29,8 @@
             </div>
             <!--- Menu for Mobile --->
             <ul class="navbar-nav-small" id="navbar-nav-small">
-                <li><a href="blog.html">Home</a></li>                   
-                <li><a href="tags.html">Tags</a></li>
+                <li><a href="../../blog.html">Home</a></li>                   
+                <li><a href="../../tags.html">Tags</a></li>
                 <li><a href="../../../index.html" target="_blank">Portfolio</a></li>
                 <li><i class="fas fa-times" id="close-menu"></i></li>
             </ul>  <!--- End Menu for Mobile --->          
@@ -43,24 +44,55 @@
             </div>
             <div class="content-post">
                 <article>
-                  <h2>Using grid and flexbox for a gallery</h2>
-                  <p><a href="grid_flexbox.html" target="_blank"
-                        >Here</a> id an example of a simple gallery created with grid and flexbox. </p>
-                    
-                  <p>Grid layout allows to create a simple, scalable gallery. In each box I used flexbox to display the picture and the short node. Definietly try to scale the window up and down, to check how nicely the items in the gallery adapt.</p>                       
+                  <h2>CSS cards effect</h2>
                   
+                    
+<!--- Boxshadow Section -->
+                    <div class='grid inside-container'>
+                       <div class='todo-list'>
+                        <div class='todo-item'>
+                          <p>Placeholder text here</p>
+                        </div>
+                        <div class='todo-item'>
+                          <p>Placeholder text here</p>
+                        </div>
+                        <div class='todo-item'>
+                          <p>Placeholder text here</p>
+                        </div>
+                        <div class='todo-item'>
+                          <p>Placeholder text here</p>
+                        </div>
+                      </div>
+                       <div class='description'>
+                         <p>I used <strong>box-shadow</strong> to achieve this cool looking 'cards' effect.</p> 
+                         <ul>
+                           <li>I applied the dark, thin shadow, to imitate the actual shadow of the first page</li>
+                           <li>Below I placed a shadow in a color of the front page, no blur effect on this one, to imitate the secod 'card.</li>
+                           <li>For the second 'card' I applied the same style, darker shadow as for the first one.</li>
+                           <li>And then repeat the process one more time. And that's it!</li>
+                         </ul>
+<pre>box-shadow: 2px 2px 3px 1px #aaa, 
+8px 10px 0 1px #eee, 
+8px 12px 3px 3px #aaa,
+14px 20px 0 3px #eee, 
+14px 22px 3px 5px #aaa;
+</pre>
+                      </div>
+                    </div><!--- End Boxshadow Section -->
+                    
                 </article>
                 <section class="date-and-tags">
-                  <span class="date">[2019-04-03] </span>
-                  <a href="../../tags.html#listHtml">HTML5</a>
+                  <span class="date">[2019-04-05] </span>
                   <a href="../../tags.html#listCss">CSS</a>
                 </section>
                 <div class="postsNav">
-                  
-                  <a href="../../blog.html" style="margin-left: 40%">Home</a>
                   <div class="postNavItem">
-                    <a href="../boxshadow-page-effect/boxshadow-page-effect.html">Next<i class="fas fa-chevron-right icon"></i></a>
+                    <a href="../grid_flexbox/grid_flexbox_article.html"><i class="fas fa-chevron-left icon"></i>Prev</a>
                   </div>
+                  <a href="../../blog.html">Home</a>
+                  <div class="postNavItem">
+                    <!--<a href="#">Next<i class="fas fa-chevron-right icon"></i></a>-->
+                  </div> 
                 </div>
   </div>
             <aside>
@@ -83,7 +115,7 @@
         
         <!--- Start Footer Section --->
         <footer>
-            created by &copy; <strong><a href="../index.html" target="_blank">Partycja Adamczyk</a></strong>
+            created by &copy; <strong><a href="../../../index.html" target="_blank">Partycja Adamczyk</a></strong>
         </footer><!--- End Footer Section --->
         
     </div>

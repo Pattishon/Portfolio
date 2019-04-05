@@ -1,0 +1,61 @@
+.inside-container{
+  margin: 0;
+    margin-top: 1em;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  background: #fff;
+}
+.grid{
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.todo-list{
+    margin: 2rem;
+    padding: .3em;
+    background: #eee;
+    box-shadow: 2px 2px 3px 1px #aaa, 
+        8px 10px 0 1px #eee, 
+        8px 12px 3px 3px #aaa,
+        14px 20px 0 3px #eee, 
+        14px 22px 3px 5px #aaa;    
+}
+.todo-item{
+    margin: .2em;
+    padding: .3em;
+    border-bottom: 1px dashed #aaa;
+    display: flex;
+    align-items: center;
+}
+
+.todo-item p{
+    font-family: 'Verdana';
+    font-size: .8em;
+    color: #333;
+}
+
+.description {
+  margin: 1em;
+  margin-bottom: 3em;  
+}
+.description ul{
+  list-style: square inside ;
+  list-style: none;
+}
+.description li{
+  padding: .3em;
+}
+.description li::before {
+  content: "\25A0";
+  color: teal;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+pre{
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: .9em;
+  line-height: 1.5;
+}
