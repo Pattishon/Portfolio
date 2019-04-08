@@ -271,6 +271,9 @@ hr.socket{
 .narrow h1{
     font-size: 1.5rem;
 }
+.project > div:nth-child(2){
+    order: -1;
+}
 }
 
 /*============ BOOTSTRAP BREAK POINTS:
