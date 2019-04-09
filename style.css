@@ -218,6 +218,12 @@ h3.heading{
 .project-img img:hover{
     transform: scale(1.1);
 }
+.github{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
 
 
 /*--- Footer - contact ---*/
