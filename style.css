@@ -123,14 +123,43 @@ body{
     background: var(--light-color);
     border-color: var(--light-color);    
 }
-.btn-secondary:hover{
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active{
     background: var(--med-color);
     border-color: var(--med-color);
 }
 #bio{
     margin-bottom: 0;
 }
-
+/*positioning the CV options*/
+.cv-options{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--dark-color-transp);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.cv-options a{
+    height: 2.5em;
+    margin: .3em;
+}
+.cv-options span{
+    z-index: 3;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+.close-cv-options{
+    color: white;
+    
+}
+.close-cv-options:hover{
+    cursor: pointer;
+}
 /*--- Skills ---*/
 h3.heading{
     font-size: 1.9rem;
@@ -276,6 +305,9 @@ hr.socket{
 }
 .narrow h1{
     font-size: 1.5rem;
+}
+.cv-options{
+    flex-direction: column;
 }
 .project > div:nth-child(2){
     order: -1;
