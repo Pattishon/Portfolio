@@ -181,9 +181,6 @@ h3.heading {
   color: var(--lightest-color);
   font-size: 3.5em;
 }
-.skill svg.svg-inline--fa {
-  color: var(--lightest-color);
-}
 .skill p {
   font-size: 1.1rem;
 }
@@ -275,6 +272,9 @@ footer svg.svg-inline--fa {
   margin: 1.2rem 0.5rem 0 0;
 }
 footer svg.svg-inline--fa:hover,
+footer .iconify {
+  font-size: 1.5em;
+}
 footer a:hover {
   color: var(--lightest-color);
   text-decoration: none;
