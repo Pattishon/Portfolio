@@ -231,6 +231,9 @@ h3.heading {
   border-top: 1px dotted var(--dark-color);
   font-size: 0.8em;
 }
+.project-about .iconify {
+  font-size: 2em;
+}
 .project-img {
   width: 100%;
   overflow: hidden;
